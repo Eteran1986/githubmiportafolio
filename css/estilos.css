@@ -1,0 +1,373 @@
+*{
+    margin: 0;   
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+nav{
+    text-align: right;
+    padding: 35px 55px 0 0;
+}
+/* centramos todos los documentos en esta clase */
+.contenedor{
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1080px;
+    margin: auto;
+    overflow: hidden;
+}
+/* Pantalla principal */
+/* ubicar las opciones */
+.contacto{
+    border: 1px solid #110550d5;
+    padding: 10px 25px;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius:0 ;
+    margin: 20px;
+    margin-bottom: 10px;
+    text-shadow: 3px 3px 5px rgb(0, 0, 0);  
+}
+
+/* dar forma a los contactos */
+.contacto1{
+    background: #110550d5;
+    padding: 10px 25px;
+    color: #fff;
+    text-decoration: none;
+    border-radius:40px ;
+    margin: 20px;
+    margin-bottom: 10px;
+    line-height: 60px;
+}
+/* colocación de foto con la transparencia adecuada */
+header{
+    width: 100%;
+    height: 600px;
+    background: #7558b9;  
+    background: -webkit-linear-gradient(to right, hsla(34, 100%, 79%, 0.404), hsla(34, 62%, 53%, 0.801)),url(../img/Eduardo.jpg);  
+    background: linear-gradient(to right, hsla(34, 100%, 79%, 0.404), hsla(34, 62%, 53%, 0.801)),url(../img/Eduardo.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}/* darle estilo al texto h1 */
+.texto-header h1{
+    line-height: 40pt;
+    font-size: 40px;
+    color:#fff; 
+    text-shadow: 3px 3px 5px rgb(0, 0, 0);  
+}/* darle estilo al texto h2 */
+.texto-header h2{
+    line-height: 30px;
+    font-size: 20px;
+    font-weight: 300;
+    color:rgb(255, 255, 255); 
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);    
+}/* centrar el texto h1, h2 y contacto  */
+header .texto-header{
+    display: flex;
+    height: 500px;
+    padding: 0px 40px;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+}/* Para una presentacion de onda al final del bloque */
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}/* fin de la presentacion 1 */
+/* Acerca de*/
+/* edición de la foto haciendolo circulo y centrado */
+.logo-imagen{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+}
+/* centramos los textos y le damos espacios */
+.contenedor-sobre-nosotros{
+    display: flex;
+    height: 280px;
+    line-height: 40px;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+/* color a todos los titulos mencionados*/
+.titulo{
+    color: #642a73;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+/* estilo al h3*/
+h3{
+    font-size: 40px;
+    line-height: 70px;
+    color:rgb(112, 103, 197);   
+}
+/*estilo al h5*/
+h5{
+    font-size: 20px;
+    color:rgb(0, 0, 0);   
+}
+/* seccion proyecto */
+/* para diferenciar entre secciones*/
+.Proyecto{
+    background: #fff1cc ;
+}
+/* ajustes de fotos */
+.galeria-pro{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}/* cuadros para las fotos con sus sombras */
+.imagen-pro{
+    width:24%;
+    margin-bottom: 10px;
+    height: 150px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer ;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
+}/* ajuste de las imagenes a los cuadros */
+.imagen-pro > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+/*  imagenes al pasar el mouse  */
+.hover-galeria{
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ top: 0;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+ opacity: 0;
+}
+.hover-galeria img{   
+    width: 50px;
+}
+.hover-galeria p{
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+.hover-galeria:hover{
+    transform: scale(1);
+     background: #4b0684b3;
+ transition-duration: 0.5s;
+ opacity: 1;
+}
+/* Estudios */
+.estudio-cont{
+    display: flex;
+    justify-content: space-around;
+}
+.imagen-about{
+    width: 35%;
+}
+.estudio-cont .estudio-ind{
+    width: 80%;
+}
+.estudio-ind > h3{
+    font-size: 140%;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 15px; 
+}
+.estudio-ind > p{
+    text-align: center;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+}
+.estudio-ind p span{
+    background: crimson;
+    color: #fff;
+    border-radius: 25%;
+    display: inline-block;
+    text-align: center;
+    width: 10%;
+    height: 10%;
+    padding: 2px;
+}
+/* Habilidades*/ 
+.Habilidades{
+    background: rgb(255, 241, 204) ;
+}
+.habilidades-cont{
+    display: flex;
+    justify-content: space-evenly;
+}
+.texto-izquierda{
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+/* cursos */
+.cursos-cont{
+    display: flex;
+    justify-content: space-around;
+}
+.cursos{
+    background: rgb(55, 193, 206) ;
+}
+.cursos-cont .texto-izquierda{
+    color: #fff;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+}
+/* Trabajo */
+.imagen-about-derecha{
+    width: 45%;
+    float: right;
+}
+.texto-derecha p{
+    text-indent: 5em;
+}
+/* tarjetas */
+.cards{
+    display: flex;
+    justify-content: space-evenly;  
+    flex-wrap:wrap ;
+}
+.cards .card{
+    background: #4b0684b3 ;
+    display: flex;
+    width: 500px;
+    height: 250px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 15px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
+    margin: 8px;
+}
+.cards .card img{
+    width: 100px;
+    height: 100px;
+    object-fit:cover;
+    border: 3px solid #10001db3;
+    border-radius: 50%;
+}
+.cards .card > .contenido-texto-card{
+    width:60%;
+    color: #fff;
+}
+.cards.card >.contenido-texto-card p{
+    font-weight: 300;
+    padding-top: 5px;
+}
+.contenido-texto-card > p{
+    margin: 15px 0px;
+}
+/* contacteme*/
+.Contactame{
+    background: #aa4b6b;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.contact_form{  
+    width: auto; 
+    margin: 0px 100px;
+    size: 100%;
+    height: auto;
+    padding-top: 30px;
+    padding-bottom: 80px;  
+    padding-left: 0px; 
+ }
+.colocar{
+    color: #fff;
+    margin: 5px 0px;
+    display: flex;
+    text-align: right;
+    border: 1.5px solid #110550d5;
+    font-size: 10px;
+    padding: 5px 0px 5px 0px;
+}
+.contactar_fin{
+    color: #fff;
+    float: right;
+    margin: 10px 5px;
+    padding: 5px 5px;
+    border: 3px solid #110550d5;
+    text-decoration: none;
+}
+.mensaje{
+    display: flex;
+    height: 100px; 
+}
+.Contactame >.titulo{
+    padding: 10px;
+    color: #fff;
+}
+/* cambiar a presentacion de celulares*/
+@media screen and (max-width:900px){
+    header{
+        background-position:center ;
+    }
+    .contenedor-sobre-nosotros{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .sobre-nosotros .contenido-texto{
+        width:90% ;
+    }
+    .imagen-about{
+        width: 90%;
+    }
+    .imagen-about-derecha{
+        width: 90%;
+    }
+    .imagen-pro{
+        width: 44%;
+    }
+    .cards{
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .cards .card{
+        width: 90%;
+    }
+    .habilidades-cont{
+        justify-content: center;
+        flex-direction: column;
+    }
+    .estudio-cont{
+        justify-content: center;
+        flex-direction: column;
+    }
+    .cursos-cont{
+        justify-content: center;
+        flex-direction: column;
+    }
+    .texto-izquierda{
+        text-align: center;
+    }
+    .texto-derecha{
+        text-align: center;
+    }
+    }
+@media screen and (max-width:500px){
+    nav{
+        text-align: center;
+        padding: 30px 0 0 0;
+    }
+    nav a{
+        margin-right: 5px;
+    }
+    .texto-header{
+        font-size: 35px;
+    }
+}
+    
