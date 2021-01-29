@@ -10,6 +10,12 @@ nav{
     text-align: right;
     padding: 35px 55px 0 0;
 }
+.icono{
+    display: none;
+    float: right;
+    font-size: 24px;
+    padding: 23.5px 20px;
+  }
 /* centramos todos los documentos en esta clase */
 .contenedor{
     padding: 60px 0;
@@ -22,7 +28,7 @@ nav{
 /* ubicar las opciones */
 .contacto{
     border: 1px solid #110550d5;
-    padding: 10px 25px;
+    padding: 10px 15px;
     color: #fff;
     font-weight: 500;
     text-decoration: none;
@@ -53,12 +59,14 @@ header{
     background-size: cover;
     background-attachment: fixed;
     position: relative;
+    transition: all 1s ease;
 }/* darle estilo al texto h1 */
 .texto-header h1{
     line-height: 40pt;
     font-size: 40px;
     color:#fff; 
-    text-shadow: 3px 3px 5px rgb(0, 0, 0);  
+    text-shadow: 3px 3px 5px rgb(0, 0, 0);
+    transition: all 0.5s ease;  
 }/* darle estilo al texto h2 */
 .texto-header h2{
     line-height: 30px;
@@ -89,6 +97,7 @@ header .texto-header{
     border-radius: 50%;
     display: block;
     margin: auto;
+    transition: all 1s ease;
 }
 /* centramos los textos y le damos espacios */
 .contenedor-sobre-nosotros{
@@ -175,7 +184,7 @@ h5{
     justify-content: space-around;
 }
 .imagen-about{
-    width: 35%;
+    width: 80%;
 }
 .estudio-cont .estudio-ind{
     width: 80%;
@@ -232,7 +241,9 @@ h5{
     float: right;
 }
 .texto-derecha p{
-    text-indent: 5em;
+    text-align: justify;
+    align-items: center;
+    float: right;
 }
 /* tarjetas */
 .cards{
@@ -284,6 +295,9 @@ background: linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b); /* W3C, IE 10+
     padding-bottom: 80px;  
     padding-left: 0px; 
  }
+ .ingreso{
+  width: 100%;
+ }
 .colocar{
     color: #fff;
     margin: 5px 0px;
@@ -309,8 +323,32 @@ background: linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b); /* W3C, IE 10+
     padding: 10px;
     color: #fff;
 }
+.imagen-emelec{
+    position: absolute;
+    height: auto;
+    width: 100%;
+}
+.texto-campeon{
+    text-align: center;
+    font-weight: 500;
+    color: lemonchiffon;
+}
 /* cambiar a presentacion de celulares*/
 @media screen and (max-width:900px){
+    /*.enlaces{
+        width: 150px;
+        height: 10px;
+        flex-direction: column;
+        justify-content: left;
+        align-items: left;
+    }*/
+    .contacto{
+        padding: center; 
+        border: none;
+    }
+    .texto-header h1{
+        font-size: 50px;
+    }
     header{
         background-position:center ;
     }
@@ -326,7 +364,11 @@ background: linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b); /* W3C, IE 10+
         width: 90%;
     }
     .imagen-about-derecha{
-        width: 90%;
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        flex-direction: column;
+
     }
     .imagen-pro{
         width: 44%;
@@ -347,6 +389,10 @@ background: linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b); /* W3C, IE 10+
         justify-content: center;
         flex-direction: column;
     }
+    .trabajo-cont{
+        justify-content: center;
+        flex-direction: column;
+    }
     .cursos-cont{
         justify-content: center;
         flex-direction: column;
@@ -355,19 +401,35 @@ background: linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b); /* W3C, IE 10+
         text-align: center;
     }
     .texto-derecha{
-        text-align: center;
+        justify-content: center;
+        flex-direction: column;
     }
     }
-@media screen and (max-width:500px){
-    nav{
-        text-align: center;
-        padding: 30px 0 0 0;
+    @media screen and (max-width:542px){
+        .texto-header h1{
+            font-size: 40px;
+        }
+        .contenedor-sobre-nosotros{
+            justify-content: center;
+            flex-direction: column; 
+            margin: 1em 2em ;
+            text-align: center;          
+        }
+        .contacto{
+            padding: 0px 0px 0px;
+        }
     }
-    nav a{
-        margin-right: 5px;
+    @media screen and (max-width:390px){
+        .contacto{
+            padding: auto;
+            margin:5px;
+        }
+        .contenedor-sobre-nosotros{
+            margin: 30px;
+            justify-content: center;
+            flex-direction: column; 
+            text-align: center;          
+        }
     }
-    .texto-header{
-        font-size: 35px;
-    }
-}
+
     
