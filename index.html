@@ -25,15 +25,18 @@
 <body>
     <header>
         <nav>
-            <a href="#"class="contacto">Contacto</a>
-            <a href="#"class="contacto">Acerca de</a>
-            <a href="#" class="contacto">Proyecto</a>
+            <div class="enlaces" id="enlaces">
+            <a href="#contacto"class="contacto">Contacto</a>
+            <a href="#grupo"class="contacto">Acerca de</a>
+            <a href="#proyecto" class="contacto">Proyecto</a>
+        </div>
         </nav>
-        <section class="texto-header">
+
+            <section class="texto-header">
             <h1>Hola Soy Eduardo Terán. Estudiante y Programador</h1>
             <h2>Para ser un experto en creación WEB</h2>
             <div>
-                <a href="#" class="contacto1">Contacto</a>    
+                <a href="#contacto" class="contacto1">Contacto</a>    
             </div>
             
         </section>
@@ -44,26 +47,26 @@
             </svg></div>
     </header>
     <main>
-        <section class="contenedor sobre-nosotros">
+        <section class="contenedor sobre-nosotros" id="grupo">
             <!-- <h2 class="titulo">Acerca</h2> -->
             <div class="contenedor-sobre-nosotros">
                 <img src="./img/Icono.jpg" alt="" class="logo-imagen">
                 <div class="contenido-textos">
                     <h3>Mi nombre es Eduardo Terán</h3>
                     <h5>Soy estudiante de la carrera de Ingenieria de Software de quinto semestre</h5>
-                    <a href="#" class="contacto1">Contacto</a> 
+                    <a href="#contacto" class="contacto1">Contacto</a> 
                 </div>
             </div>
         </section>
-        <section class="Proyecto">
+        <section class="Proyecto" id="proyecto">
             <div class="contenedor">
                 <h2 class="titulo">Proyecto</h2>
                 <div class="galeria-pro">
                     <div class="imagen-pro">
-                        <img src="./img/1img.jpg" alt="">
+                        <img src="./img/Emelec.jpg" alt="">
                         <div class="hover-galeria">
                             <img src="./img/click.png" alt="icono al momento de seleccionar">
-                            <p>Finanzas</p>
+                            <p>Emelec 2013-2014-2015</p>
                         </div>
                     </div>
                     <div class="imagen-pro">
@@ -127,7 +130,7 @@
                     <img src="./img/estudios.png" alt="" class="imagen-about">
                     <div class="estudio-ind">
                         <h3>Primaria</h3>
-                        <p><span>*</span>Unidad Educativa Eugenio Espero</p>
+                        <p><span>*</span>Unidad Educativa Eugenio Espejo</p>
                         <p><span>*</span>Unidad Educativa Matamoros</p>
                         <p><span>*</span>Unidad Particular Pueblos Unidos</p>
                     </div>
@@ -163,7 +166,7 @@
             <div class="contenedor">
                 <div class="trabajo-cont">
                 <img src="./img/Mantenimiento.png" alt="" class="imagen-about-derecha">
-                <div class="texto-derecha"> 
+                <div class="texto-izquierda"> 
                     <h2 class="titulo">Trabajo</h2>   
                     <p>Ediciones de video para spots Publicitarios </p>
                     <p>Productor General de Noticias</p>
@@ -229,22 +232,34 @@
             </div>
         </div>
         </section>
-        <section class="Contactame">
+        <section class="Contactame" id="contacto">
             <h2 class="titulo">Contacteme</h2>
+            
                 <div class="contact_form">
                             <p>
-                            <label for="nombre" class="colocar">Nombre</label>
+                                
+                            <label for="nombre" class="colocar" >Nombre 
+                                <input type="text" name="Aquí su nombre" class="ingreso">
+                            </label>
                             </p>
                             <p>
-                            <label for="email" class="colocar">Email</label>
+                            <label for="email" class="colocar">Email        
+                                <input type="text" name="Aquí su nombre" class="ingreso">
+                            </label>
                             </p>
                             <p>
-                            <label for="mensaje" class="colocar mensaje">Mensaje</label>                     
+                            <label for="mensaje" class="colocar mensaje">Mensaje
+                                <input type="text" name="Aquí su nombre" class="ingreso">
+                            </label>                     
                             </p>
                             <a href="#" class="contactar_fin" ><p>Contactar</p></a>     
                      </div>
+                     <p class="texto-campeon">Tri-CAMPEON del Ecuador</p>
+                    <img src="./img/tenor.gif" alt=""class="imagen-emelec">
+                      
         </section>
-    </main> -->
+    </main> 
+    <script src="script.js" ></script>
 </body>
 
 </html>
